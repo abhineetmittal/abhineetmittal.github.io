@@ -45,7 +45,7 @@
 <p>To do this, create a file named router.php in your project root. You can choose any name for this file, but router.php provides the right context.</p>
 <p>In this use case, I have a static website with all the static content like html, css etc. But my permalinks are without html extension, though the file name is same. I want to write a router which can rewrite my permalinks to .html version and at the same time, not mess us my style (.css) and script (.js) files.</p>
 <p>Here is the code which I wrote for my particular use case. You can modify it to suit your own requirements.</p>
-<pre><code>// router.php
+<pre><code class="language-php">// router.php
 
 // Get the url path and trim leading slash
 $url_path = trim( $_SERVER[ 'REQUEST_URI' ], '/' );
