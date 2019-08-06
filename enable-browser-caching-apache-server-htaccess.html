@@ -33,14 +33,16 @@
 
     <p>Last Updated on: August 6, 2019</p>
 
-            <a href="/tag/apache.html" class="button">Apache</a>
-            <a href="/tag/htaccess.html" class="button">htaccess</a>
-            <a href="/tag/caching.html" class="button">Caching</a>
-            <a href="/tag/server-caching.html" class="button">Server Caching</a>
+            <a href="/tag/apache" class="button">Apache</a>
+            <a href="/tag/htaccess" class="button">htaccess</a>
+            <a href="/tag/caching" class="button">Caching</a>
+            <a href="/tag/server-caching" class="button">Server Caching</a>
     
     <p>Browser caching is very important for any website as it helps in speeding up the website as well saves on bandwidth costs as well.</p>
 <p>To enable broswer caching on Apache, you must have required moduless enabled.</p>
-<p>Go to terminal and run following two commands.</p>
+<p>If you are on a shared host like Godaddy or Hostgator, these modules are already enabled in most cases. So, you can skip the following stes and directly go to the htaccess code given at the end of this post.</p>
+<p>In case, you are on a cloud server like DigitalOcean, you may need to enable these modules which can be done in following easy steps. </p>
+<p>Open your terminal and run following two commands.</p>
 <pre><code>sudo a2enmod headers 
 sudo a2enmod expires</code></pre>
 <p>Now restart the Apache server by running following command.</p>
