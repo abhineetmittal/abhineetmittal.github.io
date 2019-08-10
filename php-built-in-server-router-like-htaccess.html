@@ -11,47 +11,38 @@
 
         
 
-    <link rel="stylesheet" href="/assets/css/normalize.css" >
-    <link rel="stylesheet" href="/assets/css/skeleton.css" >
     <link rel="stylesheet" href="/assets/css/style.css" >
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75903757-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-75903757-1');
-    </script>
 </head>
 
 <body>
     <div id="page">
         <header id="page-header">
-            <div id="main-logo">
-                <a href="/" title="Webrosis">Webrosis</a>
+            <div id="main-logo" class="center-flex">
+                <a href="/" title="Webrosis"><img src="/assets/images/logo.jpg" class="img-fluid"></a>
             </div>
 
-            <nav id="main-nav">
-                <a href="/" class="button button-yellow">Home</a>
+            <nav id="main-nav" class="center-flex">
+                <a href="/" class="button button-yellow" class="button">Home</a>
+                <a href="/category/coding" class="button button-yellow" class="button">Coding</a>
+                <a href="/category/wordpress" class="button button-yellow" class="button">Wordpress</a>
             </nav>
-        </header>
-
-        
+        </header>        
 
         <main id="page-content">
 
         
+    <p><a href="/">Home</a> / <a href="/category/coding">coding</a> /</p>
+    
     <h1>Create a htaccess-like router in PHP built-in server</h1>
 
-    <p>Last Updated on: August 7, 2019</p>
+    <p>Last Updated on: 2019-08-07</p>
 
-            <a href="/tag/php" class="button">PHP</a>
-            <a href="/tag/apache" class="button">Apache</a>
-            <a href="/tag/htaccess" class="button">htaccess</a>
-            <a href="/tag/router" class="button">Router</a>
-    
+    <p>Tags: 
+                    <a href="/tag/php">php</a>
+                    <a href="/tag/apache">apache</a>
+                    <a href="/tag/htaccess">htaccess</a>
+            </p>
+
     <p>While developing a project, PHP built-in server is much more flexible and easy to use compared to desktop setups like LAMP, XAMP, WAMP etc.</p>
 <p>However, without Apache, you also lose the access to the magical and powerful .htaccess feature where you can create simple rewrite rules.</p>
 <p>What if our application needs such rewrites like loading .html files for permalinks without extension?</p>
@@ -94,6 +85,7 @@ if( preg_match( '/[.css]/', $url_path ) ) {
         <footer id="page-footer">        
             <div class="text-center">Copyright © 2019 Abhineet Mittal</div>
         </footer>
+    </div>
 
 </body>
 
