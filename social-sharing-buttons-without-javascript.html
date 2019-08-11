@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Sharing Buttons without Javascript</title>
+
+    
+
+
+        
+
+    <link rel="stylesheet" href="http://localhost:5000/assets/css/style.css" >
+</head>
+
+<body>
+    <div id="page">
+        <header id="page-header">
+            <div id="main-logo" class="center-flex">
+                <a href="http://localhost:5000/" title="Webrosis"><img src="/assets/images/logo.jpg" class="img-fluid"></a>
+            </div>
+
+            <nav id="main-nav" class="center-flex">
+                <a href="http://localhost:5000/" class="button button-yellow" class="button">Home</a>
+                <a href="http://localhost:5000/category/coding" class="button button-yellow" class="button">Coding</a>
+                <a href="http://localhost:5000/category/wordpress" class="button button-yellow" class="button">Wordpress</a>
+            </nav>
+        </header>        
+
+        <main id="page-content">
+
+        
+    <p><a href="http://localhost:5000/">Home</a> / <a href="http://localhost:5000/category/coding">coding</a> /</p>
+
+    <h1>Social Sharing Buttons without Javascript</h1>
+
+    <p>Last Updated on: 2019-08-11</p>
+
+    <p> 
+                    <a href="http://localhost:5000/tag/html">html</a>
+            </p>
+
+    <p>If you are developing a website, it is imperative to have social sharing buttons to increase social engagement which in turn will result in higher traffic. A lot of widgets are available for this purpose.</p>
+<h2>The Pros</h2>
+<p>Adding a single line of Javascript adds all the popular sharing buttons to your website. Some services allow you to customize them through remote dashboards. They also add share count and other metrics to your buttons.</p>
+<p>From button styling to icons, everything is handled by these widgets. All you have to do is select which buttons to show and style of those buttons.</p>
+<p>These services also provide cloud hosted analytics data where you can easily monitor the visitor and their sharing pattern of different posts.</p>
+<h2>The Cons</h2>
+<p>When you add these widgets, they simply add the Javascript sdks of these social websites which load the sharing button and other metrics like number of shares, likes etc. along with the buttons.</p>
+<p>This may seem good, but it adds a lot of processing to the webpage. This results in higher load time and thus, lower ranking in search engine result pages (SERP).</p>
+<p>A major portion of your added analytics becomes redundant if you already have Google Analytics code installed on your website. Also, social analytics can also be implemented through events in Google Analytics, thus making additional tracking redundant. In most cases, social analytics added by these sharing buttons adds little value.</p>
+<p>Also, many of these services, track your visitors and you have no option to opt out of it. They get all the traffic data of your website, slowing diown your website with their own trackers, and you have no control of that. For a webmaster, this is an uneasy situation.</p>
+<h2>The Solution: No Javascript</h2>
+<p>The simple solution is to eliminate all the Javascript and add simple html buttons with sharing links provided by almost all social networks.</p>
+<p>I have created sharing buttons for some popular social networks, and included the required css for the buttons. You can add your own styles as well. In case you need an even better look, you can also add <a href="https://fontawesome.com/" title="Font Awesome" rel="nofollow" target="_blank">icons</a> to your buttons.</p>
+<h3>The CSS</h3>
+<p>First, lets create CSS for these buttons.</p>
+<pre><code class="language-css">.button {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: .25rem .5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: .2rem;
+  color: black;
+  background-color: white;
+}
+
+.button-facebook {
+  background-color: #4267b2;
+  color: white;
+}
+
+.button-twitter {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+.button-whatsapp {
+  background-color: #25D366;
+  color: white;
+}</code></pre>
+<h3>Facebook</h3>
+<p>In case of Facebook, you will also need to have an App ID which is very easy to get. Just go to <a href="https://developers.facebook.com/" title="Font Awesome" rel="nofollow" target="_blank">Facebook Developers</a> website, and fill the form with new app details. You do not have to create an actual app. Once you get the app id, use it in the following code to add simple Facebook sharing buttons.</p>
+<pre><code class="language-html">&lt;a href="https://www.facebook.com/dialog/share?app_id=your-app-id&amp;href=https://example.com/link-to-your-post" target="_blank" title="Share on Facebook" class="button button-facebook"&gt;Facebook&lt;/a&gt;
+</code></pre>
+<h3>Twitter</h3>
+<pre><code class="language-html">&lt;a href="https://twitter.com/intent/tweet?url=https://example.com/link-to-your-post&amp;text=Post-Title&amp;via=your-twitter-username" target="_blank" title="Share on Twitter" class="button button-twitter"&gt;Twitter&lt;/a&gt;</code></pre>
+<h3>Whatsapp</h3>
+<pre><code class="language-html">&lt;a href="whatsapp://send?text=https://example.com/link-to-your-post" target="_blank" title="Share on Whatsapp" class="button button-whatsapp"&gt;Whatsapp&lt;/a&gt;</code></pre>
+<p>These are just three, but you can add any number of buttons of different social networks based on the sharing link provided in their documentation.</p>
+<p>These links are simple html and css with NO Javascript. They do not add extra load on your page and give you the required functionality. You may miss the share count, but its really not needed and the downsides of adding it to your website is simply not worth it.</p>
+<p>So, just add these buttons to your website posts and pages to replace the heavy sharing widgets, and move towards a faster, cleaner code and a performant website.</p>
+
+    <div>
+        <div><strong>Share:</strong></div>
+
+<a href="https://www.facebook.com/dialog/share?app_id=499291307487990&href=http://localhost:5000/social-sharing-buttons-without-javascript" target="_blank" rel="noreferrer" title="Share on Facebook" class="button button-facebook">Facebook</a><a href="https://twitter.com/intent/tweet?url=http://localhost:5000/social-sharing-buttons-without-javascript&text=Social Sharing Buttons without Javascript&via=webrosis" target="_blank" rel="noreferrer" title="Share on Twitter" class="button button-twitter">Twitter</a><a href="whatsapp://send?text=http://localhost:5000/social-sharing-buttons-without-javascript" target="_blank" rel="noreferrer" title="Share on Whatsapp" class="button button-whatsapp">Whatsapp</a>
+    </div>
+
+
+        </main>
+
+        <footer id="page-footer">        
+            <div class="text-center">Copyright © 2019 Abhineet Mittal</div>
+
+            <div class="text-center">
+                <small>
+                    <a href="http://localhost:5000/about">About</a> | 
+                    <a href="http://localhost:5000/contact">Contact</a> | 
+                    <a href="http://localhost:5000/terms-of-service">Terms of Service</a> | 
+                    <a href="http://localhost:5000/privacy-policy">Privacy Policy</a>
+                </small>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
