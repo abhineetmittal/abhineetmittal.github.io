@@ -1,1 +1,1 @@
-Sitemap: https://webrosis.com/sitemaps.index.xml
+Sitemap: https://webrosis.com/sitemap.xml
