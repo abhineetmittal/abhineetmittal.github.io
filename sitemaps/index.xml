@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:5000/terms-of-service</loc>
+        <lastmod>2019-08-11</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/privacy-policy</loc>
+        <lastmod>2019-08-11</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/contact</loc>
+        <lastmod>2019-08-11</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/about</loc>
+        <lastmod>2019-08-07</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/social-sharing-buttons-without-javascript</loc>
+        <lastmod>2019-08-11</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/php-built-in-server-router-like-htaccess</loc>
+        <lastmod>2019-08-07</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:5000/enable-browser-caching-apache-server-htaccess</loc>
+        <lastmod>2019-08-06</lastmod>
+    </url>
+</urlset>
