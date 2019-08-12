@@ -125,6 +125,16 @@ pre > code {
   color: white;
 }
 
+/* Alert Box
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.alert-box {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: .2rem;
+}
+
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -149,6 +159,10 @@ pre > code {
   color: red;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .text-center {
