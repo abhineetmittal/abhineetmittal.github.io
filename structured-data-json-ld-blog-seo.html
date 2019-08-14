@@ -10,7 +10,7 @@
     <meta name="description" content="Adding structured data like JSON-LD to your blog or website is a very important search engine optimization (SEO) technique. It helps Google to understand your content better and helps your website to get a better search ranking.">    
     <link rel="canonical" href="https://webrosis.com/structured-data-json-ld-blog-seo" />
 
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","headline":"Add Structured Data (JSON-LD) to improve SEO","description":"Adding structured data like JSON-LD to your blog or website is a very important search engine optimization (SEO) technique. It helps Google to understand your content better and helps your website to get a better search ranking.","mainEntityOfPage":"mainEntityOfPage","image":"https:\/\/webrosis.com\/assets\/images\/logo.jpg","datePublished":"2019-08-12","dateModified":"2019-08-12","author":{"@type":"Person","name":"Abhineet Mittal","description":"Abhineet is IIM Alumnus and Founder of popular Digital Publishing Platform, Sahityapedia. He is a technology enthusiast by hobby & an avid reader.","image":"https:\/\/webrosis.com\/assets\/images\/logo.jpg","url":"https:\/\/webrosis.com\/about"},"publisher":{"@type":"Organization","name":"webrosis.com","logo":{"@type":"ImageObject","url":"https:\/\/webrosis.com\/assets\/images\/logo.jpg"}}}</script>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","headline":"Add Structured Data (JSON-LD) to improve SEO","description":"Adding structured data like JSON-LD to your blog or website is a very important search engine optimization (SEO) technique. It helps Google to understand your content better and helps your website to get a better search ranking.","mainEntityOfPage":"https:\/\/webrosis.com\/structured-data-json-ld-blog-seo","image":"https:\/\/webrosis.com\/assets\/images\/logo.jpg","datePublished":"2019-08-12","dateModified":"2019-08-12","author":{"@type":"Person","name":"Abhineet Mittal","description":"Abhineet is IIM Alumnus and Founder of popular Digital Publishing Platform, Sahityapedia. He is a technology enthusiast by hobby & an avid reader.","image":"https:\/\/webrosis.com\/assets\/images\/logo.jpg","url":"https:\/\/webrosis.com\/about"},"publisher":{"@type":"Organization","name":"webrosis.com","logo":{"@type":"ImageObject","url":"https:\/\/webrosis.com\/assets\/images\/logo.jpg"}}}</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75903757-1"></script>
@@ -57,8 +57,7 @@
     <p>By <a href="https://webrosis.com/about">Abhineet Mittal</a> | In <a href="https://webrosis.com/category/web-development">Web Development</a></p>
     <p>Last Updated on: August 12, 2019</p>
 
-    <h2>How to add Structured Data (JSON-LD) to your blog to improve SEO</h2>
-<p>Adding structured data like JSON-LD to your blog or website is a very important search engine optimization (SEO) technique. It helps Google to understand your content better and helps your website to get a better search ranking.</p>
+    <p>Adding structured data like JSON-LD to your blog or website is a very important search engine optimization (SEO) technique. It helps Google to understand your content better and helps your website to get a better search ranking.</p>
 <h2>What is Structured Data?</h2>
 <p>Structured data is a standard format to add information to a page which can be easily understood by search engines to identify the content of the page. For example, if you have a cooking blog, Google needs to understand if a particular page is for recipe and if yes, it needs to extract key information from that page to match with the user query. Structured data helps Google by directly providing this information.</p>
 <p>Structured data is comprised of predefined properties which are based on <a href="https://schema.org" title="schema.org" target="_blank">schema.org</a>.</p>
@@ -84,7 +83,7 @@ Similar to Microdata, RDFa uses HTML tag attributes which are officially HTML5 e
   "@type": "BlogPosting",
   "headline": "Enable browser caching on Apache server using htaccess",
   "description": "Browser caching for all types of files can be easily done using Apache's .htaccess file. This simple configuration results in a faster website, less consumption of bandwidth and better user experience.",
-  "mainEntityOfPage": "mainEntityOfPage",
+  "mainEntityOfPage": "https://webrosis.com/enable-browser-caching-apache-server-htaccess",
   "image": "https://webrosis.com/assets/images/logo.jpg",
   "datePublished": "2019-08-06",
   "dateModified": "2019-08-06",
@@ -112,7 +111,7 @@ Similar to Microdata, RDFa uses HTML tag attributes which are officially HTML5 e
 <li>The most relevant type for a blog post in schema.org is BlogPosting. So, we will use that for @type.</li>
 <li>Headline is page title. This title will be visible on Google search results page.</li>
 <li>Description is a short summary of the page, and like Heading, it will be visible on the Google search results page.</li>
-<li>mainEntityOfPage defines that the topic discussed is the primary topic for this page. Use this as is.</li>
+<li>mainEntityOfPage defines that the topic discussed is the primary topic for this page. That means it has to have canonical url.</li>
 <li>Image is url to featured post or thumbnail of this post.</li>
 <li>datePublished &amp; dateModified are self-explanatory.</li>
 <li>Author adds nested properties to define a Person. Add your name, description (biography), image and url.</li>
