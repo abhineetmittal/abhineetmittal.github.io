@@ -58,7 +58,7 @@
     <p>Last Updated on: August 13, 2019</p>
 
     <p>When you share a link to your post on Facebook or Twitter, it automatically generates a preview card with a title, description and optional image. This preview helps your post visibility by presenting it in an attractive manner to other users.</p>
-<p>This preview can be customized for all our pages using <a href="https://ogp.me/" title="Open Graph Protocol" target="_blank">Open Graph Protocol</a> (OGP) created by Facebook. Twitter supports this protocol adding a few tags of its own as well. In this post, I will discuss the required meta tags to customize your link preview.</p>
+<p>This preview can be customized for all our pages using <a href="https://ogp.me/" title="Open Graph Protocol" target="_blank" rel="noreferrer">Open Graph Protocol</a> (OGP) created by Facebook. Twitter supports this protocol adding a few tags of its own as well. In this post, I will discuss the required meta tags to customize your link preview.</p>
 <p>In this article, based on the Open Graph Protocol, I will tell you the exact tags to be added in the head section of your blog. This will transform your posts into rich social objects on Facebook, Twitter etc.</p>
 <h2>What is Open Graph Protocol</h2>
 <p>Open Graph Protocol is a schema to assign properties to a web page which can be easily understood by the compliant applications. Open Graph Protocol is implemented through meta tags in the head section of HTML web page and is losely based on other existing schema technologies.</p>
@@ -73,7 +73,7 @@
 </ul>
 <p>These are the visible elements which are needed in a link preview. Apart from these, there are two more properties, which are type and url.</p>
 <p>Type defines the type of web page. For blog posts and news articles, it is 'article'. Url is the canonical url of the object. This acts as a unique id for the oject in the entire graph. In case of multiple pages sharing same data like comment pages on a blog post, this url remains same.</p>
-<p>Apart from this, Facebook requires you to add their FB App ID in another meta tag. As described in my previous post on the topic <a href="https://webrosis.com/social-sharing-buttons-without-javascript" title="Social Sharing Buttons">Social Sharing Buttons</a>, you can easily get your Facebook app id from your <a href="https://developers.facebook.com/" title="Facebook for Developers dashboard" target="_blank">Facebook for Developers dashboard</a>.</p>
+<p>Apart from this, Facebook requires you to add their FB App ID in another meta tag. As described in my previous post on the topic <a href="https://webrosis.com/social-sharing-buttons-without-javascript" title="Social Sharing Buttons">Social Sharing Buttons</a>, you can easily get your Facebook app id from your <a href="https://developers.facebook.com/" title="Facebook for Developers dashboard" target="_blank" rel="noreferrer">Facebook for Developers dashboard</a>.</p>
 <p>In case of Twitter, though it defines it's own tags, it officially supports the Open Graph Protocol as well. So, if you add separate Twitter meta tags along with Open Graph tags, Twitter tags will be redundant. So, in the interest of keeping our code concise, we will only add those Twitter tags, which are not covered by Open Graph Protocol.</p>
 <p>Twitter only requires one extra meta tag, 'twitter:card', which we will add in our code.</p>
 <p>Let's take a look at the final code.</p>
@@ -90,13 +90,13 @@
 <p>You will have to modify four tags as per your post data- &quot;og:title&quot;, &quot;og:description&quot;, &quot;og:image&quot;, &quot;og:url&quot;.</p>
 <p>Paste these tags in the head section of your HTML page. Your page is now rich social object.</p>
 <p>Sometimes Facebook or Twitter fetches wrong values for these tags, or sometime they may not even able to fetch any data. Also, you may have changed the post title, description or image after the page has been fetched by Facebook/Twitter. As Facebook &amp; Twitter cache their data for many days, you may not be able to see the updated data when you share that link.</p>
-<p>In such cases, you may use the <a href="https://developers.facebook.com/tools/debug/" title="Facebook Sharing Debugger" target="_blank">Facebook Sharing Debugger</a> which shows how Facebook looks at the Open Graph Meta of your page and shows you the open graph data currently saved by Facebook for your post. It also allows you to force Facebook to fetch the data again, in case, there is a discrepancy.</p>
+<p>In such cases, you may use the <a href="https://developers.facebook.com/tools/debug/" title="Facebook Sharing Debugger" target="_blank"  rel="noreferrer">Facebook Sharing Debugger</a> which shows how Facebook looks at the Open Graph Meta of your page and shows you the open graph data currently saved by Facebook for your post. It also allows you to force Facebook to fetch the data again, in case, there is a discrepancy.</p>
 <h2>What happens when there are no Open Graph meta tags on your page</h2>
 <p>If there are no Open Graph meta tags on a page, Facebook tries to get that data automatically based on page content. Usually, the title of the page is taken as title. Description is taken from the description meta tag, if available. Otherwise, it takes first few lines from the content. Similarly, the first image found on the page which is larger than 200x200 pixels id taken as image.</p>
 <p>There is no confirmation that in the absence of Open Graph meta tags, Facebook will take only these values. It can take any value as defined by their fetching algorithms. So, to avoid this uncetainty, it is always avised to add the above seven meta tags to all your web pages.</p>
 <h2>Conclusion</h2>
 <p>So, you can see that Facebook's Open Graph Protocol is currently kind of a universal protocol to define social properties of a web page. It is supported by Twitter and many other social networks.</p>
-<p>It is very easy to implement as it requires adding only seven basic tags. You can add many more tags by referring to the <a href="https://ogp.me/" title="Open Graph Protocol Documentation" target="_blank">Open Graph Protocol Documentation</a>.</p>
+<p>It is very easy to implement as it requires adding only seven basic tags. You can add many more tags by referring to the <a href="https://ogp.me/" title="Open Graph Protocol Documentation" target="_blank"  rel="noreferrer">Open Graph Protocol Documentation</a>.</p>
 <p>So, don't wait anymore. If you have not yet implemented the Open Graph meta tags in your blog or website, it is important that you do it now.</p>
 
     <p>
