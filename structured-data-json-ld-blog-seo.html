@@ -77,8 +77,8 @@ Similar to Microdata, RDFa uses HTML tag attributes which are officially HTML5 e
 <p>Though, schema.org provides a large number of properties for each page type, it is not necessary for you to implement all those properties. A few important ones are enough.</p>
 <h2>Implementation of JSON-LD in a Blog Post</h2>
 <p>First of all, let's take a look at the complete JSON-LD snippet to be added to the head section of a blog post. Then, I will explain each property. Most of the properties are self explanatory.</p>
-<pre><code class="language-json">{
-&lt;script type="application/ld+json"&gt;
+<pre><code class="language-json">&lt;script type="application/ld+json"&gt;
+{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Enable browser caching on Apache server using htaccess",
@@ -96,7 +96,7 @@ Similar to Microdata, RDFa uses HTML tag attributes which are officially HTML5 e
   },
   "publisher": {
     "@type": "Organization",
-    "name": "webrosis.com",
+    "name": "Webrosis.com",
     "logo": {
       "@type": "ImageObject",
       "url": "https://webrosis.com/assets/images/logo.jpg"
